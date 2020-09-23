@@ -330,6 +330,7 @@ public class TestLeafNode {
             leaf = new LeafNode(metadata, bufferManager, keys, rids, Optional.of(42L), treeContext);
 
             pageNum = leaf.getPage().getPageNum();
+            System.out.println(i);
 
             assertEquals(leaf, LeafNode.fromBytes(metadata, bufferManager, treeContext, pageNum));
         }

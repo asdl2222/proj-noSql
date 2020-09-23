@@ -444,6 +444,8 @@ public class TestBPlusTree {
                 }
 
                 // Test scanAll.
+                System.out.println(indexIteratorToList(tree::scanAll));
+                //System.out.println(keys.size());
                 assertEquals(sortedRids, indexIteratorToList(tree::scanAll));
 
                 // Test scanGreaterEqual.
